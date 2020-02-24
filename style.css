@@ -11,7 +11,7 @@
     clear: both;
   }
 
-.main{
+main{
   width: 960px;
   margin:50px auto;
 }
@@ -25,8 +25,8 @@
   float:left;
   width: 250px;
   margin-top:50px;
-  margin-right:0px;
-  margin-left:0px;
+  margin-right:30px;
+  margin-left:30px;
   margin-bottom:50px;
   padding:10px;
   position:relative;
@@ -78,31 +78,35 @@
 
 @media screen and (max-width:768px) {
 
+  main{
+    margin: 50px auto;
+    
+  }
   .blog {
    float: none;
    width: 90%;
-   margin-right: auto;
-   margin-left: auto;
-  
-  }
-   
-  main :nth-child(1){
-    /* margin-top: 50px; */
-    
+   margin: 20px auto;
   }
   
-  .blog :nth-child(2){
-    margin-bottom: 20px;
+  .blog:nth-child(1){
+    margin: 0 auto 20px auto ;
+    margin-top: 0;
   
+  }
+  
+  .blog:nth-child(2){
+    margin: 20px auto;
+  
+  }
+  
+  .blog:last-child{
+    margin: 0 auto;
+    margin-bottom: 0;
   }
 
-  .blog:last-child{
-    margin-right: auto;
-    margin-bottom: 50px;
-  }
   
   .blog-image1{
-    height: 400px;
+    height: 150px;
     /* width: 280px; */
     background-image: url(img/flow01.png);
     background-size: cover;
@@ -111,14 +115,14 @@
   
   
   .blog-image2{
-    height: 400px;
+    height: 150px;
     background-image: url(img/flow02.png);
     background-size: cover;
     background-position: bottom;
   }
   
   .blog-image3{
-    height: 400px;
+    height: 150px;
    
     background-size: cover;
     background-position: bottom;
